@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box ;
+
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 30px;
+    background-color: #ebecee;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
+}
+@media screen and (max-Width:600px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+.nav ul li{
+    display: inline-block;
+    margin: 5px;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #6193ff;
+    font-weight: 700px;
+}
+.textBox{
+    max-width: 600px;
+    margin: 100px 3%;
+
+}
+@media screen and (max-Width: 600px) {
+    .textBox{
+        text-align: center;
+    }
+    .textBox button{
+        margin-left: 120px;
+    }
+}
+
+.textBox h1{
+    font-size: 45px;
+    color: blue;
+}
+.textBox button{
+    border: none;
+    padding:7px 10px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px;
+    position: absolute;
+    left: 60px;   
+}
+.textBox button:hover{
+    background-color: black;
+    transition: 1s;
+}
+.userbox{
+    position: absolute;
+    right: 1%;
+    top: 80px;
+}
+.userbox img{
+    width: 400px;
+}
+@media only screen and (max-width: 600px) {
+    .userbox{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .userbox img{
+        display: none;
+    }
+
+}
+
+.Product{
+    width: 100%;
+}
+
+.productList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  screen and (max-Width: 600px) {
+    .productList{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.ProductTitle{
+   margin: 3%;
+}
+.productList button{
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+
+}
+.productList button:active{
+    background: black;
+    color: white;
+    
+}
+.Laptop{
+    border-radius: 10px;
+    width: 200px;
+    background: #ebecee;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 3px 3px 20px #252424 ;
+
+}
+@media screen and(max-Width:600px) {
+    .Laptop{
+        width: 100px;
+        background-color: blue;
+        font-size: 300px;
+    }
+}
+.Laptop h3{
+    margin-top:3px;
+}
+
+.Laptop:hover{
+    background-color: #b047f6;
+    transition: 0.5s;
+    color: white;
+}
+.Laptop:active{
+    background: white;
+    color: black;
+}
+.Laptop img{
+    width: 150px;
+}
+
+/* footer */
+footer{
+    background-color: #252424;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+.FooterContainer{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+@media  screen and (max-Width: 600px) {
+    .FooterContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer{
+        height: 850px;
+        text-align: center;
+    }
+}
+.FooterContainer ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+.FooterContainer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.footerTitle{
+    width: 300px;
+}
+.copyright{
+    color: white;
+    width: 300px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 100;
+}
